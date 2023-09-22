@@ -1,21 +1,29 @@
 {
   "private": true,
   "scripts": {
-    "dev": "prisma generate && next dev",
+    "dev": "prisma generate && node seed.js && next dev",
     "build": "prisma generate && prisma db push && next build",
+    "studio": "prisma studio",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/client": "^4.14.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/material": "^5.14.10",
+    "@prisma/client": "^5.1.1",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
+    "ag-grid-community": "^30.1.0",
+    "ag-grid-react": "^30.1.0",
     "bcrypt": "^5.1.0",
     "next": "^13.4.2",
     "next-auth": "^4.22.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hot-toast": "^2.4.1"
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
@@ -23,7 +31,7 @@
     "eslint": "8.11.0",
     "eslint-config-next": "^13.0.5",
     "postcss": "^8.4.12",
-    "prisma": "^4.14.0",
+    "prisma": "^5.1.1",
     "tailwindcss": "^3.0.23",
     "typescript": "^4.6.2"
   }
